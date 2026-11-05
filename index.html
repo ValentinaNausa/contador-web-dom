@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactividad con el DOM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Interactividad con el DOM</h1>
+        <p class="description">
+            Haz clic en el botón para incrementar el contador y registrar la hora exacta del evento en la tabla.
+        </p>
+
+        <!-- Contador (este elemento se actualiza con JavaScript) -->
+        <div id="contador" class="counter">0</div>
+
+        <!-- Botón que dispara el evento -->
+        <button id="btn-like" class="btn">¡Haz Clic Aquí!</button>
+
+        <!-- Tabla de registros -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº Clic</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-body">
+                <!-- Aquí se insertan las filas dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
